@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom';
 import { SidebarData } from './SidebarData';
 import './Navbar.css';
 import { IconContext } from 'react-icons';
+import TextField from '@mui/material/TextField';
+
 
 function Navbar() {
   const [sidebar, setSidebar] = useState(false);
@@ -18,8 +20,8 @@ function Navbar() {
           <Link to='#' className='menu-bars'>
             <FaIcons.FaBars onClick={showSidebar} />
           </Link>
-          <div style={{marginLeft:'20px',color:'white'}}>
-            <h1>Professional Organizer Indonesia</h1>
+          <div style={{flex:1,height:'100%',color:'white',  flexDirection:'row'}}>
+            <div style={{flex:1,marginLeft:'30px',fontSize:'20px',textAlign:'left',marginTop:'20px'}}>Professional Organizer Indonesia</div>
           </div>
         </div>
         <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>

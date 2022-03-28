@@ -131,20 +131,21 @@ const Catalogue = () => {
 
     const data ={
         columns:[
-             {field: 'product_name', headerName: 'Product Number', width: 110},
-             {field: 'description', headerName: 'Description', width: 500},
-             {field: 'specification', headerName: 'Specification', width: 600},
+             {field: 'product_name', headerName: 'Product Number', width: 150},
+             {field: 'description', headerName: 'Description', width: 400},
+             {field: 'specification', headerName: 'Specification', width: 400},
+             {field: 'price', headerName: 'Price', width: 300},
         ],
         rows:[
-         {id:'01',product_name:'Chair',description:'Ruang keluarga (living room) adalah tempat berkumpul dan beraktivitas bersama keluarga. Karena itu, ciptakan living room yang nyaman',specification:'Ukuran 3x10x20'},
-         {id:'02',product_name:'Table',description:'tempat atau ruangan untuk mengolah berbagai macam makanan.',specification:'Ukuran 10x10'},
-         {id:'03',product_name:'Cupboard',description:'ruangan yang terletak di dalam unit hunian atau akomodasi yang ditandai dengan penggunaannya untuk tidur.',specification:'Ukuran 3x10'}
+         {id:'01',product_name:'Chair',description:'Ruang keluarga (living room) adalah tempat berkumpul dan beraktivitas bersama keluarga. Karena itu, ciptakan living room yang nyaman',specification:'Ukuran 3x10x20',price:'Rp 150.000'},
+         {id:'02',product_name:'Table',description:'tempat atau ruangan untuk mengolah berbagai macam makanan.',specification:'Ukuran 10x10',price:'Rp 250.000'},
+         {id:'03',product_name:'Cupboard',description:'ruangan yang terletak di dalam unit hunian atau akomodasi yang ditandai dengan penggunaannya untuk tidur.',specification:'Ukuran 3x10',price:'Rp 550.000'}
         ]
      };
  
     return ( 
         <div className="room" style={{ display: 'flex', justifyContent:'right', height: '100%', zIndex:1 }} >
-           <div style={{ height: 500, width: '80%' }}>
+           <div style={{ height: 500, width: '100%' }}>
                 <div style={{margin:'10px'}}> 
                     <Stack spacing={2} direction="row">
                         <Button variant="contained">Add Catalogue</Button>
