@@ -1,8 +1,18 @@
 import * as React from 'react';
-import { DataGrid, GridToolbar } from '@mui/x-data-grid';
+import {
+    DataGrid,
+    gridPageCountSelector,
+    gridPageSelector,
+    useGridApiContext,
+    useGridSelector,
+    GridToolbar
+  } from '@mui/x-data-grid';
 import { useDemoData } from '@mui/x-data-grid-generator';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
+import { styled } from '@mui/material/styles';
+import Pagination from '@mui/material/Pagination';
+import PaginationItem from '@mui/material/PaginationItem';
 
 const Project = () => {
 
@@ -20,7 +30,7 @@ const Project = () => {
 
     return ( 
         <div className="room" style={{ display: 'flex', justifyContent:'right', height: '100%', zIndex:1 }} >
-          <div style={{ height: 500, width: '100%' }}>
+          <div style={{ height: 500, width: '80%' }}>
              <div style={{margin:'10px'}}> 
                     <Stack spacing={2} direction="row">
                         <Button variant="contained">Add Project</Button>

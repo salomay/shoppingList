@@ -126,67 +126,6 @@ const StyledDataGrid = styled(DataGrid)(({ theme }) => ({
 
 const Rooms = () => {
 
-
-   const columns = [
-    {field: 'room_name', headerName: 'Room Name', width: 200},
-    {
-        field: "update",
-        headerName: "Update",
-        sortable: false,
-        renderCell: (params) => {
-          const onClick = (e) => {
-            e.stopPropagation(); // don't select this row after clicking
-    
-        //     const api: GridApi = params.api;
-        //     const thisRow: Record<string, GridCellValue> = {};
-    
-        //     api
-        //       .getAllColumns()
-        //       .filter((c) => c.field !== "__check__" && !!c)
-        //       .forEach(
-        //         (c) => (thisRow[c.field] = params.getValue(params.id, c.field))
-        //       );
-    
-        //     return alert(JSON.stringify(thisRow, null, 4));
-          };
-    
-          return <Button variant="contained" onClick={onClick}>Update</Button>;
-        }
-      },
-      {
-        field: "delete",
-        headerName: "Delete",
-        sortable: false,
-        renderCell: (params) => {
-          const onClick = (e) => {
-            e.stopPropagation(); // don't select this row after clicking
-    
-        //     const api: GridApi = params.api;
-        //     const thisRow: Record<string, GridCellValue> = {};
-    
-        //     api
-        //       .getAllColumns()
-        //       .filter((c) => c.field !== "__check__" && !!c)
-        //       .forEach(
-        //         (c) => (thisRow[c.field] = params.getValue(params.id, c.field))
-        //       );
-    
-        //     return alert(JSON.stringify(thisRow, null, 4));
-          };
-    
-          return <Button variant="contained" onClick={onClick}>Delete</Button>;
-        }
-      },
-   ];
-
-//    const { data } = useDemoData({
-//     dataSet: 'Commodity',
-//     rowLength: 10,
-//     maxColumns: 10,
-//   });
-
-
-
    const data ={
        columns:[
             {field: 'room_name', headerName: 'Room Name', width: 110},
@@ -199,8 +138,6 @@ const Rooms = () => {
        ]
     };
 
-
-    console.log(data)
 
     return ( 
         <div className="room" style={{ display: 'flex', justifyContent:'right', height: '100%', zIndex:1 }} >
