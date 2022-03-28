@@ -20,7 +20,7 @@ const Report = () => {
 
     return ( 
         <div className="room" style={{ display: 'flex', justifyContent:'right', height: '100%', zIndex:1 }} >
-          <div style={{ height: 500, width: '80%' }}>
+          <div style={{ height: 500, width: '100%' }}>
               
             <DataGrid
                 columns={columns}

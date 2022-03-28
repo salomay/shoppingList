@@ -20,7 +20,7 @@ const Catalogue = () => {
 
     return ( 
         <div className="room" style={{ display: 'flex', justifyContent:'right', height: '100%', zIndex:1 }} >
-          <div style={{ height: 500, width: '80%' }}>
+          <div style={{ height: 500, width: '100%' }}>
                 <div style={{margin:'10px'}}> 
                     <Stack spacing={2} direction="row">
                         <Button variant="contained">Add Catalogue</Button>
